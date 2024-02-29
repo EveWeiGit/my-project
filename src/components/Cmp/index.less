@@ -1,0 +1,28 @@
+.main {
+	position: absolute;
+
+	@size: 16px;
+
+	.editStyle {
+		position: absolute;
+		box-sizing: content-box;
+	}
+
+	.unselected {
+		border: solid 2px transparent;
+		.stretchDot {
+			display: none;
+		}
+	}
+	.selected {
+		border: solid 2px #02dcf7;
+	}
+	.stretchDot {
+		position: absolute;
+		z-index: 9999;
+		border-radius: 50%;
+		width: @size;
+		height: @size;
+		background-color: rgba(0, 87, 255, .5);
+	}
+}
